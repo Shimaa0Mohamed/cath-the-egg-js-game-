@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/gif" href="Unted-1.png"><title> catch the  egg </title>
+	<link rel="stylesheet" type="text/css" href="play2.css">
+</head>
+<body>
+
+
+ 
+  <div id="box" >
+    <div class="bar">
+    	<div class="info" class="time">
+            <span class="timer" id="a" style="color: red; float: left; margin-right: 20%">00:00</span>
+        </div>
+        
+    	 <div class="info"> 
+            <span class="user" id="a" style="float: left;">user:</span><span class="name" id="b" style="float: left; margin-top: 0.2%; font-size: 25px"> </span>
+        </div>
+        <div class="info">
+            <span class="score" id="a">score: </span><span id="b" >0</span>
+        </div>      
+       <div class="info"> 
+            <span class="image" id="a"><img style="vertical-align:middle;
+                    " src="../Images/lifes.png" width="55" /></span>
+        <span class="lifes" id="b">5</span>
+        </div>
+        <div >
+            <img src="ezgif.com-resize (4).png" id="backbtn" onclick="" width="60px" style="cursor: pointer">
+        </div>
+        
+    
+    
+    </div>
+      <div class="grid">
+
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+         <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+         <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+         <div></div>
+          <div></div>
+           <div></div>
+          <div></div>
+         <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+         <div></div>
+          <div></div>
+           <div></div>
+          <div></div>
+         <div></div>
+          <div></div>
+     
+      </div>
+
+      
+
+   </div>
+    <script>
+    var getname = localStorage.getItem("storageName");
+   
+    var q=document.querySelector(".name");
+       q.textContent = getname;
+         var levell = localStorage.getItem("storageNamee");
+        prompt(levell);
+    </script>
+        
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="icon" type="Unted-1.png" href="po.jpg"><title> catch the  egg </title>
+    <link rel="stylesheet" href="play.css"> 
+</head>
+  <body>
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">How to play</a>
+  <a href="#">Documentation</a>
+  <a href="#">About us</a>
+  <a href="#">Contact us</a>
+</div>
+<img src="ezgif.com-crop.gif" width="300px" onclick="openNav()">
+    <div id="box" >
+
+      <button id="open-button" onclick="openForm()"><strong>Start</strong></button>
+    <div class="open-btn" id = "open-btn">  
+      <div class="contain">
+     
+        <img src="m.gif" id="ch">
+      <div class="login-popup">
+        <div class="form-popup" id="popupForm">
+          <form  class="form-container" action="index2.html">
+            <input type="text" id="input" placeholder="username" name="input" required>
+            <button  class="b easy" id="easy" onclick="getvalue(this.form,this.id)">Easy</button>
+            <button  class="b normal" id="normal" onclick="getvalue(this.form,this.id)">Normal</button>
+             <butoon   class=" back"    onclick="closeForm()"> x</butoon>
+          </form>
+        </div></div>
+    </div></div>
+  </div> 
+  
+    <script src="play.js">
+    </script>
+    <script>
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+function  getvalue(oForm , mode){
+    var getInput = oForm.elements[0].value
+   localStorage.setItem("storageName",getInput);
+    var level;
+    
+    if(mode == "easy")
+{
+   level = "easy";
+  
+}
+    else{
+        level = "normal";
+      
+    
+   
+}
+localStorage.setItem("storageNamee",level); 
+      }
+</script>
+  </body>
+</html>
